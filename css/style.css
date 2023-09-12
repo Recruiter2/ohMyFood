@@ -1,0 +1,62 @@
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+}
+
+:root {
+  --main-color: rgba(147, 86, 220, 1);
+  --filter-bg-color: #D9D9D9;
+  --filter-gray: #DEEBFF;
+  --main-bg-color: #DEEBFF;
+  --footer-bg-color: #353535;
+  --font--green: #008766;
+  --green: #99E2D0;
+}
+
+body {
+  display: flex;
+}
+
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body, .main-container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* section header */
+header {
+  margin-bottom: 30px;
+}
+
+.logo_food {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.logo_food img {
+  max-width: 166.1px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.nav {
+  text-align: center;
+}
+.nav .nav__link {
+  font-size: 15px;
+  padding-left: 30px;
+}
+.nav .nav__link .nav__link--purple {
+  color: #a5b4fc;
+}
+
+/*# sourceMappingURL=style.css.map */
