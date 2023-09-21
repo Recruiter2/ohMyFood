@@ -316,10 +316,8 @@ background: white;
 
 
 
-.restaurant__card{
-
+.restaurant__card {
   background: white;
-   ;
 &__content {
     display: flex;
     justify-content: space-between;
@@ -329,7 +327,7 @@ background: white;
     border-radius: 0 0 1rem 1rem
   }
   .card-title {
-font-family: Roboto-Regular;
+    font-family: Roboto-Regular;
     font-weight: bold;
   }
 }
@@ -348,8 +346,6 @@ font-family: Roboto-Regular;
     &:hover, &:active {
       opacity: 0;
     }
-
-
   }
 
   .fa-heart {
@@ -359,10 +355,7 @@ font-family: Roboto-Regular;
     position: absolute;
     z-index:1;
     font-size: 1.5rem;
-
   }
-
-
 }
 
 .footer {
