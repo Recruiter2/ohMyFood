@@ -135,7 +135,6 @@ h2 {
 }
 .nav__link--purple:hover {
   opacity: 80%;
-  transform: scale(1.1);
   transition: transform 400ms;
 }
 
@@ -319,6 +318,19 @@ a {
   width: 6rem;
   padding-bottom: 1.6rem;
 }
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.footer__text {
+  font-family: Roboto-Medium;
+}
+.join .footer__text {
+  font-family: Roboto-Bold;
+  font-weight: 400;
+}
 .footer .join {
   display: flex;
   align-items: center;
@@ -421,7 +433,7 @@ a {
   .footer__contains {
     flex-direction: row;
     align-items: flex-end;
-    width: 40rem;
+    width: 38rem;
     justify-content: space-between;
     height: 4.2rem;
   }
@@ -429,6 +441,12 @@ a {
     padding-bottom: 0;
     margin-left: 3.6%;
     margin-right: 3.6%;
+  }
+  .footer__join {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
   }
 }
 

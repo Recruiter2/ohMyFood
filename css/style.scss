@@ -157,7 +157,7 @@ h2 {
 
       &:hover{
         opacity: 80%;
-        transform: scale(1.1);
+        //transform: scale(1.1);
         transition: transform 400ms;
       }
     }
@@ -370,6 +370,23 @@ background: white;
     width: 6rem;
     padding-bottom: 1.6rem;
       }
+
+  &__join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+  }
+
+  &__text  {
+    font-family: Roboto-Medium;
+
+  }
+  .join &__text {
+    font-family: Roboto-Bold;
+font-weight: 400;
+  }
   .join {
     display: flex;
     align-items: center;
@@ -497,7 +514,7 @@ background: white;
     &__contains{
       flex-direction: row;
       align-items: flex-end;
-      width: 40rem;
+      width: 38rem;
       justify-content: space-between;
       height: 4.2rem;
 
@@ -506,6 +523,14 @@ background: white;
       padding-bottom:0 ;
       margin-left: 3.6%;
       margin-right: 3.6%;
+    }
+
+    &__join {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+
     }
 
   }
