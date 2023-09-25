@@ -56,6 +56,42 @@ body {
   display: flex;
 }
 
+@keyframes remove {
+  0% {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleX(0);
+    transform: scaleY(0);
+  }
+}
+
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5c7497;
+  opacity: 30%;
+  width: 100vw;
+  height: 110vh;
+  position: fixed;
+  z-index: 10;
+  font-size: 5rem;
+  //transition-delay: 1250ms;
+  //transition-property: display;
+  transform: scaleX(0);
+  transform: scaleY(0);
+  animation: remove;
+  animation-duration: 2000ms;
+
+}
+
 .main-container {
   width: 100%;
   box-sizing: border-box;
@@ -72,6 +108,7 @@ body, .main-container {
 main {
   display: flex;
   flex-direction: column;
+
 }
 
 /* section header */
@@ -153,12 +190,14 @@ h2 {
     box-shadow: rgb(155, 133, 133) 0 3px 15px 0;
     &--purple {
       background:linear-gradient(-4.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+      transition: opacity 400ms;
+      opacity: 100%;
       font-weight: bold;
 
       &:hover{
         opacity: 80%;
         //transform: scale(1.1);
-        transition: transform 400ms;
+        transition: opacity 400ms;
       }
     }
   }
@@ -214,6 +253,14 @@ justify-content: space-between;
     border-radius: 1.7rem;
     background: var(--main-bg-color);
     box-shadow: rgb(217, 209, 209) 0 3px 15px 0;
+    &:hover {
+      //background: #e7b7ef;
+
+    }
+    &:hover .fonctionnement__link__icon--gray {
+      filter: invert(51%) sepia(51%) saturate(5775%) hue-rotate(240deg) brightness(90%) contrast(92%);
+      //transition: transform 400ms;
+    }
     &__number {
       border-radius:50%;
       width: 1rem;
@@ -222,16 +269,12 @@ justify-content: space-between;
       background: #56A223;
       margin-left: -0.8rem;
     }
-    &__icon--violet {
-      filter: invert(51%) sepia(51%) saturate(5775%) hue-rotate(240deg) brightness(90%) contrast(92%);
-      height: 1.2rem;
-    }
+
     &__icon--gray {
+      //transition: filter 400ms;
       filter: invert(52%) sepia(4%) saturate(35%) hue-rotate(357deg) brightness(95%) contrast(85%);
       height: 1.2rem;
-      &:hover {
 
-      }
     }
     &__text {
       color: #000;
