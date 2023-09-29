@@ -137,7 +137,7 @@ a {
   opacity: 0;
 }
 .palette .fa-heart {
-  background: -webkit-linear-gradient(-4.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: -webkit-linear-gradient(270deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -297,7 +297,7 @@ a {
   box-shadow: rgb(155, 133, 133) 0 3px 15px 0;
 }
 .nav__link--purple {
-  background: linear-gradient(-4.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(270deg, #9356DC -5.2%, #FF79DA 110.74%);
   transition: opacity 400ms;
   opacity: 100%;
 }
