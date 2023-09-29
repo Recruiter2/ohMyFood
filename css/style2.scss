@@ -14,6 +14,11 @@
         url('Roboto-Bold.ttf') format('truetype')
     }
     @font-face {
+        font-family: 'Roboto-Medium';
+        src: //url('Roboto-Light.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+                url('Roboto-Medium.ttf') format('truetype')
+    }
+    @font-face {
         font-family: 'Roboto-Light';
         src: // url('Roboto-Light.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
         url('Roboto-Light.ttf') format('truetype')
@@ -163,7 +168,7 @@ a {
 @keyframes show {
     0% {
         margin-bottom: 7rem;
-        opacity: 0%;
+        opacity: 0;
     }
 
     100% {
@@ -177,14 +182,14 @@ a {
 
 
 .article {
-    opacity: 0%;
+    opacity: 0;
     margin-top: 1rem;
 
 
     @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
             animation: show;
-            animation-delay:  0.1s + $i;
+            animation-delay:  -0.4s + $i/2; //-09 seconds because we want to start animation almost instantly
             animation-duration: 1s;
             animation-fill-mode: forwards;
         }
@@ -220,7 +225,11 @@ a {
 
         }
     }
-    &__item,
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     &__description {
         display: flex;
         flex-direction: row;
@@ -232,6 +241,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        overflow: hidden;
     }
     &__description {
         max-height: 1rem;
@@ -257,8 +267,10 @@ a {
     }
     &__text {
         white-space: nowrap;
-        overflow: hidden;
+        //overflow-y: hidden;
         text-overflow: ellipsis;
+        //overflow-x: visible;
+        overflow:  hidden;
     }
 }
 
@@ -325,21 +337,42 @@ a {
         width: 6rem;
         padding-bottom: 1.6rem;
     }
+
+    &__join {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+    }
+
+    &__text  {
+        font-family: Roboto-Medium;
+        color: white;
+        fill: white;
+
+
+    }
+    .join &__text {
+        font-family: Roboto-Bold;
+        font-weight: 400;
+    }
     .join {
         display: flex;
         align-items: center;
         gap: 1rem;
         .small {
             width: 0.85rem;
-            padding-bottom: 0;
+            padding-bottom: 0 ;
         }
     }
-    &__contains {
+    &__contains{
         height: 6rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
 }
 
 @media (min-width: 1024px) {
