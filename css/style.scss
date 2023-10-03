@@ -181,7 +181,7 @@ h2 {
             transition: opacity 400ms;
             opacity: 100%;
             font-weight: bold;
-            &:hover {
+            &:hover, &:active {
                 opacity: 80%;
                 //transform: scale(1.1);
                 transition: opacity 400ms;
@@ -234,10 +234,7 @@ a {
         border-radius: 1.7rem;
         background: var(--main-bg-color);
         box-shadow: rgb(217, 209, 209) 0 3px 15px 0;
-        &:hover {
-            //background: #e7b7ef;
-        }
-        &:hover .fonctionnement__link__icon--gray {
+        &:hover .fonctionnement__link__icon--gray, &:active .fonctionnement__link__icon--gray {
             filter: invert(51%) sepia(51%) saturate(5775%) hue-rotate(240deg) brightness(90%) contrast(92%);
             //transition: transform 400ms;
         }
@@ -256,7 +253,6 @@ a {
         }
         &__text {
             color: #000;
-            //font-weight: bold;
             font-family: Roboto-Medium;
         }
     }

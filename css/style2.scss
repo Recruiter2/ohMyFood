@@ -144,7 +144,7 @@ a {
         position: absolute;
         z-index: 3;
         margin-bottom: -1px;
-        &:hover {
+        &:hover, &:active {
             opacity: 0;
         }
     }
@@ -213,12 +213,13 @@ a {
 
         &__title {
             font-family: Roboto-Bold;
-            overflow: hidden;
             text-overflow: ellipsis;
+            overflow: hidden;
             max-height: 1rem;
             max-width: 80%;
+            white-space: nowrap;
         }
-        &:hover .article__ok {
+        &:hover .article__ok, &:active .article__ok {
             margin-right : 0;
             transition: margin-right 400ms;
             z-index: 3;
@@ -317,7 +318,7 @@ a {
             transition: opacity 400ms;
             opacity: 100%;
         }
-        &:hover {
+        &:hover, &:active {
             opacity: 80%;
             //transform: scale(1.1);
             transition: opacity 400ms;

@@ -167,7 +167,7 @@ h2 {
   opacity: 100%;
   font-weight: bold;
 }
-.nav__link--purple:hover {
+.nav__link--purple:hover, .nav__link--purple:active {
   opacity: 80%;
   transition: opacity 400ms;
 }
@@ -218,7 +218,7 @@ a {
   background: var(--main-bg-color);
   box-shadow: rgb(217, 209, 209) 0 3px 15px 0;
 }
-.fonctionnement__link:hover .fonctionnement__link__icon--gray {
+.fonctionnement__link:hover .fonctionnement__link__icon--gray, .fonctionnement__link:active .fonctionnement__link__icon--gray {
   filter: invert(51%) sepia(51%) saturate(5775%) hue-rotate(240deg) brightness(90%) contrast(92%);
 }
 .fonctionnement__link__number {

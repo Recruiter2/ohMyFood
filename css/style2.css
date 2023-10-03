@@ -133,7 +133,7 @@ a {
   z-index: 3;
   margin-bottom: -1px;
 }
-.palette .like:hover {
+.palette .like:hover, .palette .like:active {
   opacity: 0;
 }
 .palette .fa-heart {
@@ -201,12 +201,13 @@ a {
 }
 .article__item__title {
   font-family: Roboto-Bold;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   max-height: 1rem;
   max-width: 80%;
+  white-space: nowrap;
 }
-.article__item:hover .article__ok {
+.article__item:hover .article__ok, .article__item:active .article__ok {
   margin-right: 0;
   transition: margin-right 400ms;
   z-index: 3;
@@ -301,7 +302,7 @@ a {
   transition: opacity 400ms;
   opacity: 100%;
 }
-.nav__link:hover {
+.nav__link:hover, .nav__link:active {
   opacity: 80%;
   transition: opacity 400ms;
 }
