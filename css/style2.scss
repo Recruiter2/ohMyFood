@@ -186,7 +186,7 @@ a {
     margin-top: 1rem;
 
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 3 { //boucle sert à les afficher un à un et pas tous en meme temps
         &:nth-child(#{$i}) {
             animation: show;
             animation-delay:  -0.4s + $i/2; //-09 seconds because we want to start animation almost instantly
@@ -204,7 +204,6 @@ a {
     }
     &__item {
         overflow: hidden;
-
         height: 5rem;
         margin-bottom: 1rem;
         background: white;

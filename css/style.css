@@ -67,7 +67,6 @@ body {
   position: fixed;
   z-index: 10;
   font-size: 5rem;
-  transform: scaleX(0);
   transform: scaleY(0);
   animation: remove;
   animation-duration: 2000ms;
